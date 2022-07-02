@@ -30,8 +30,8 @@ public class MyController {
     //get the desired course
     @GetMapping("/courses/{courseId}")
     public Course getCourse(@PathVariable String courseId){
-        //return this.courseService.getCourse(Long.parseLong(courseId));
-        return null;
+        return this.courseService.getCourse(Long.parseLong(courseId));
+        //return null;
     }
 
     //to add course
